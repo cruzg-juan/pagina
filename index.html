@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Carlos Cruz Gonzalez</title>
+
+  <!--Estilos generales-->
+  <link rel="stylesheet" href="/css/estilos_01.css" />
+
+  <!--Estilos para el navegador-->
+  <link rel="stylesheet" href="/css/estilos_02.css" />
+
+  <!--Estilos para la sección Sobre mi-->
+  <link rel="stylesheet" href="/css/estilos_03.css" />
+
+  <!--Estilos para la sección Mis Conocimientos-->
+  <link rel="stylesheet" href="/css/estilos_04.css" />
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="principal">
+    <!--Navegación-->
+    <nav class="menu">
+      <section class="menu__container">
+        <a href="/">
+          <img src="/img/logo.jpg" alt="Mi logo" class="logo__name" />
+        </a>
+
+        <ul class="menu__links">
+          <li class="menu__item menu__item--show">
+            <a href="/" class="menu__link">Yo <img src="assets/arrow.svg" class="menu__arrow" alt="" />
+            </a>
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#Conocimientos" class="menu__link menu__link--inside">Mis conocimientos</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#ExpLab" class="menu__link menu__link--inside">Experiencia Laboral</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#Tesis" class="menu__link menu__link--inside">Tesis</a>
+              </li>
+            </ul>
+          </li>
+
+          <!--Notas-->
+          <li class="menu__item menu__item--show">
+            <a href="#" class="menu__link">Notas <img src="assets/arrow.svg" class="menu__arrow" alt="" /></a>
+            <ul class="menu__nesting">
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Álgebra</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Análisis</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Inteligencia Artificial</a>
+              </li>
+              <li class="menu__inside">
+                <a href="#" class="menu__link menu__link--inside">Ciencia de Datos</a>
+              </li>
+            </ul>
+          </li>
+
+          <!--Contacto-->
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contacto</a>
+          </li>
+        </ul>
+        <div class="menu__hamburger">
+          <img src="assets/menu.svg" class="menu__img" alt="" />
+        </div>
+      </section>
+    </nav>
+    <!--Sección sobre mi-->
+    <section class="container sobre__mi">
+      <div class="principal__texto">
+        <div class="titulo">
+          <span class="texto primer__texto"> Hola, soy </span>
+          <span class="texto segundo__texto"></span>
+        </div>
+        <p class="texto__sobre__mi">
+          Actualmente estoy estudiando el Doctorado en Ciencias (Matemáticas)
+          por la Universidad Autónoma Metropolitana, Unidad Iztapalapa. Esta
+          es mi página personal. Aquí podrán conocer sobre mí, además de
+          encontrar notas sobre matemáticas puras y aplicadas, esta última
+          enfocadas en:
+          <span class="resaltar__texto">Inteligencia Artificial, Machine Learning, Deep Learning, Big
+            data y criptografía.
+          </span>
+        </p>
+        <a href="https://www.linkedin.com/in/juan-carlos-cruz-gonzález-711a9b191" target="_blank" class="LinkedIn">
+          Ver LinkendIn
+        </a>
+      </div>
+      <div>
+        <img src="img/foto1.jpg" class="foto__perfil" alt="Foto de perfil" />
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/juan-carlos-cruz-gonzález-711a9b191" target="_blank" class="nombre">
+          Juan Carlos Cruz González
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!--Mis conocimientos-->
+    <section class="container skills" id="Conocimientos">
+      <h2 class="sub__titulo">
+        Mis conocimientos <span class="punto">:</span>
+      </h2>
+      <!--Áreas que manejo-->
+      <div class="skill-text">
+        <!--skill-box-container-->
+        <div class="s-box-container">
+          <!--skill-box-->
+          <div class="skill-box">
+            <!--icon-->
+            <div class="s-box-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <!--skill-box-text-->
+            <div class="s-box-text">
+              <strong>Matemáticas Puras</strong>
+              <p>Álgebra, Analisis, Topología, Topología Algebraica, etc.</p>
+            </div>
+          </div>
+          <!--skill-box-->
+          <div class="skill-box">
+            <!--icon-->
+            <div class="s-box-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <!--skill-box-text-->
+            <div class="s-box-text">
+              <strong>Matemáticas Aplicadas</strong>
+              <p>Criptografia</p>
+            </div>
+          </div>
+          <!--skill-box-->
+          <div class="skill-box">
+            <!--icon-->
+            <div class="s-box-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <!--skill-box-text-->
+            <div class="s-box-text">
+              <strong>Computación</strong>
+              <p>Inteligencia Artificial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--img-->
+      <div class="img__skill">
+        <img src="/img/Skill.jpg" alt="">
+      </div>
+    </section>
+
+    <!--Experiencia Laboral-->
+    <section class="project container" id="ExpLab">
+      <h2 class="subttitle">
+        Experiencia laboral <span class="point">.</span>
+      </h2>
+      <p class="copy__section">
+        Aqúi podran vizualizar mi trayectoría laboral
+      </p>
+      <article class="container-bg">
+        <div class="card">
+          <div class="cards text">
+            <h3 class="card__title">
+              Academico: Ayudante tipo: "A"<span class="point">.</span>
+            </h3>
+            <p class="card__date">Julio 2016 a Julio 2017</p>
+            <p class="card__copy">
+              Mi labor era dar asesoría de alumnos pertenecientes a la
+              división de Ciencias Básicas e Ingenieria de la Universidad
+              Autónoma Metropolitana, Unidad Iztapalapa
+            </p>
+            <a href="#" target="_blank" class="card__button">Ver</a>
+          </div>
+        </div>
+        <div class="background">
+          <img src="img/Explab_1.jpg" alt="" class="background-img" />
+          <div class="backgound_text">
+            <h3 class="background__title">Cursos que antendí:</h3>
+            <p class="background__copy">
+              Cálculo Diferencia, Calculo Integral, Calculo Diferencias de
+              Varias Variables, Calculo Integral de Varias Variables, Algebra
+              Lineal Aplicada I, Algebra Lineal APlicada II, Fundamentos de
+              Álgebra, Analisis Matematico
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cards text">
+            <h3 class="card__title">
+              Ayudante tipo: "Ordinario"<span class="point">.</span>
+            </h3>
+            <p class="card__date">Febrero-Mayo 2019</p>
+            <p class="card__copy">
+              Mi labor fue calificar y retroalimentar a los alumnos de
+              maestría en Ciencias con Especialidad en Matemáticas Aplicadas
+              del Centro de Investigación en Matemáticas, A.C. Guanajuato.
+            </p>
+            <a href="#" target="_blank" class="card__button">Ver</a>
+          </div>
+        </div>
+        <div class="background">
+          <img src="img/Explab_2.jpg" alt="" class="background-img" />
+          <div class="backgound_text">
+            <h3 class="background__title">Cursos que antendí:</h3>
+            <p class="background__copy">Análisis</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cards text">
+            <h3 class="card__title">
+              Academico: Ayudante tipo: "B"<span class="point">.</span>
+            </h3>
+            <p class="card__date">Noviembre 2019 a Noviembre 2021</p>
+            <p class="card__copy">
+              Mi labor era dar asesoría de alumnos pertenecientes a la
+              división de Ciencias Básicas e Ingenieria de la Universidad
+              Autónoma Metropolitana, Unidad Iztapalapa
+            </p>
+            <a href="#" target="_blank" class="card__button">Ver</a>
+          </div>
+        </div>
+        <div class="background">
+          <img src="img/Explab_3.jpg" alt="" class="background-img" />
+          <div class="backgound__text">
+            <h3 class="background__title">Cursos que antendí:</h3>
+            <p class="background__copy">
+              Cálculo avanzado I, Algebra Lineal I, Álgebra Lineal II,
+              Fundamentos de Álgebra, Teoría de Grupos, Calculo Diferencias de
+              Varias Variables, Calculo Integral de Varias Variables, Algebra
+              Lineal Aplicada I, Algebra Lineal APlicada II
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="cards text">
+            <h3 class="card__title">
+              Profesor UTEL<span class="point">.</span>
+            </h3>
+            <p class="card__date">Julio 2022 - presente</p>
+            <p class="card__copy">
+              Doy clases de matemarticas a alumnos de ingenieria de la UTEL
+            </p>
+            <a href="#" target="_blank" class="card__button">Ver</a>
+          </div>
+        </div>
+        <div class="background">
+          <img src="img/Explab_4.jpg" alt="" class="background-img" />
+          <div class="backgound_text">
+            <h3 class="background__title">Cursos he impartido:</h3>
+            <p class="background__copy">Álgebra Superior I</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!--Tesis-->
+    <section class="services" id="Tesis">
+      <div class="container">
+        <h2 class="subttitle">Mis tesis <span class="point">.</span></h2>
+        <p class="copu_section">
+          Aqúi podran vizualizar mis tesis de licenciatura, maestria y
+          doctorado.
+        </p>
+        <article class="container-card">
+          <div class="card">
+            <img src="img/tesis1.webp" alt="" class="card_img" />
+            <div class="cards text">
+              <p class="card_list">Teoría de Gráficas</p>
+              <h3 class="card_title">
+                Tesis de Licenciatura <span class="point">.</span>
+              </h3>
+              <p class="card_copy">Coloración de Gráficas</p>
+              <a href="pdf/Licenciatura.pdf" target="_blank" class="card_button">Ver</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/tesis2.jpg" alt="" class="card_img" />
+            <div class="cards text">
+              <p class="card_list">Topología Algebraica</p>
+              <h3 class="card_title">
+                Tesis de Maestría <span class="point">.</span>
+              </h3>
+              <p class="card_copy">
+                Sobre la clasificación de las estrateficies trivalentes...
+              </p>
+              <a href="pdf/Maestria.pdf" target="_blank" class="card_button">Ver</a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/tesis3.jpg" alt="" class="card_img" />
+            <div class="cards text">
+              <p class="card_list">Algebra no conmutativa</p>
+              <h3 class="card_title">
+                Tesis de Doctorado<span class="point">.</span>
+              </h3>
+              <p class="card_copy">
+                Hacia la generalización de la categoría de módulos de
+                cocientes.
+              </p>
+              <a href="pdf/Doctorado.pdf" target="_blank" class="card_button">Ver</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer__copy">
+      <p class="copyright">
+        Cruz G. Juan &copy; 2023 Todos los derechos reservados
+      </p>
+    </div>
+    <div class="contact">
+      <div class="item__contact">
+        <i class="bx bx-copyright contact__icon"></i>
+        <h3 class="contact_title">Cruz G. Juan</h3>
+      </div>
+      <div class="item_contact">
+        <i class="bx bx-mail-send contact_icon"></i>
+        <h3 class="contact__title">juan.cruz@xanum.uam.mx</h3>
+      </div>
+      <div class="item__contact">
+        <i class="bx bxs-edit-location contact__icon"></i>
+        <h3 class="contact__title">
+          Universidad Autónoma Metropolitana, unidad Iztapalapa
+        </h3>
+      </div>
+      <div class="item__contact">
+        <i class="bx bxl-telegram contact__icon"></i>
+        <h3 class="contact_title">5646750630</h3>
+      </div>
+    </div>
+  </footer>
+
+  <!--
+        Script
+    -->
+
+  <!--Navegador responsivo-->
+  <script src="js/script_01.js"></script>
+
+  <!--Script para el efecto de mi nombre-->
+  <script src="/js/script_02.js"></script>
+</body>
+
+</html>

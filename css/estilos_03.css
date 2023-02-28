@@ -1,0 +1,122 @@
+/*Darle formato a la sección Sobre mi*/
+.principal{
+    width: 100%;
+    min-height: 100vh;
+    background: #1A202C;
+}
+
+.sobre__mi{
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.principal__texto{
+    margin: 100px 100px 0px 0px;
+    text-align: justify;
+}
+
+/*Animación de textos*/
+.titulo .texto{
+    position: relative;
+    color: #4070f4;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.titulo .texto.primer__texto{
+    color: #fff;
+}
+
+.texto.segundo__texto::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #1A202C;
+    border-left: 2px solid #4070f4;
+    animation: animate 3s steps(12) infinite;
+}
+
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+/*Termina animación de textos*/
+
+.texto__sobre__mi{
+    font-size: 24px;
+    color: var(--gray1);
+    /*color: #fff;*/
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 20px 0;
+}
+
+.resaltar__texto{
+    font-size: 26px;
+    color: var(--gold1);
+    font-weight: 700;
+}
+
+.LinkedIn{
+    padding: 20px 30px;
+    margin: 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+    border-radius: 6px;
+}
+
+.foto__perfil{
+    width: 305px;
+    height: 305px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nombre{
+    display: none;
+}
+
+/*Cuando se visualiza en una pantalla que mida menos mida 800px*/
+@media (max-width:800px){
+    .sobre__mi{
+        display: block;
+    }
+    .titulo, .texto__sobre__mi, .resaltar__texto, .LinkedIn{
+        display: none;
+    }
+
+    
+    .foto__perfil{
+        width: 205px;
+        height: 205px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .nombre{
+        display: flex;
+        padding: 10px 15px;
+        margin: 30px;
+        display: inline-block;
+        background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+        text-decoration: none;
+        color: var(--black2);
+        font-weight: 700;
+        box-shadow: var(--shadow) var(--color_shadow);
+        border-radius: 6px;
+    }
+    
+}
